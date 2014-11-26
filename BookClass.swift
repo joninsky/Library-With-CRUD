@@ -10,6 +10,7 @@ import Foundation
 
 class Book  {
     
+    //Properties that 
     var bookTitle: String?
     var bookAuthor: String?
     var shelfBookIsOn: Shelf?
@@ -35,9 +36,9 @@ class Book  {
     init (Title t: String, Author a: String, TheShelf s: Shelf) {
         bookTitle = t
         bookAuthor = a
-        shelfBookIsOn = s
+        enshelf(s)
+        //Add the book to the books on shelf array for the given shelf
         s.booksOnShelf.append(self)
-        isCheckedOut = false
     }
     
     

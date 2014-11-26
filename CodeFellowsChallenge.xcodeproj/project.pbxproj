@@ -17,9 +17,9 @@
 		4E64D0E41A159093003F02AF /* LibraryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64D0E31A159093003F02AF /* LibraryClass.swift */; };
 		4E64D0E61A15909D003F02AF /* ShelfClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64D0E51A15909D003F02AF /* ShelfClass.swift */; };
 		4E64D0E81A1590A5003F02AF /* BookClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64D0E71A1590A5003F02AF /* BookClass.swift */; };
+		4E7580761A239BA300F3E1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7580741A239BA200F3E1E9 /* Main.storyboard */; };
 		4E9E2F1B1A17E86C0035F9A7 /* AllBooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E2F1A1A17E86C0035F9A7 /* AllBooksTableViewController.swift */; };
 		4E9E2F1D1A1A7C560035F9A7 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E2F1C1A1A7C560035F9A7 /* BookDetailViewController.swift */; };
-		4E9E2F1F1A1A8FAE0035F9A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9E2F1E1A1A8FAE0035F9A7 /* Main.storyboard */; };
 		4E9E2F211A1A941F0035F9A7 /* CheckedOutBooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E2F201A1A941F0035F9A7 /* CheckedOutBooksTableViewController.swift */; };
 		4E9E2F231A1C02F80035F9A7 /* AddBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E2F221A1C02F80035F9A7 /* AddBookTableViewController.swift */; };
 		4E9E2F251A1C052C0035F9A7 /* AddBookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E2F241A1C052C0035F9A7 /* AddBookDetailViewController.swift */; };
@@ -50,9 +50,9 @@
 		4E64D0E31A159093003F02AF /* LibraryClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryClass.swift; sourceTree = "<group>"; };
 		4E64D0E51A15909D003F02AF /* ShelfClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfClass.swift; sourceTree = "<group>"; };
 		4E64D0E71A1590A5003F02AF /* BookClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookClass.swift; sourceTree = "<group>"; };
+		4E7580751A239BA300F3E1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E9E2F1A1A17E86C0035F9A7 /* AllBooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllBooksTableViewController.swift; sourceTree = "<group>"; };
 		4E9E2F1C1A1A7C560035F9A7 /* BookDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
-		4E9E2F1E1A1A8FAE0035F9A7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		4E9E2F201A1A941F0035F9A7 /* CheckedOutBooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckedOutBooksTableViewController.swift; sourceTree = "<group>"; };
 		4E9E2F221A1C02F80035F9A7 /* AddBookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookTableViewController.swift; sourceTree = "<group>"; };
 		4E9E2F241A1C052C0035F9A7 /* AddBookDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookDetailViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 				4E9E2F201A1A941F0035F9A7 /* CheckedOutBooksTableViewController.swift */,
 				4E64D0E01A158F9D003F02AF /* BookTableViewController.swift */,
 				4E9E2F1C1A1A7C560035F9A7 /* BookDetailViewController.swift */,
-				4E9E2F1E1A1A8FAE0035F9A7 /* Main.storyboard */,
+				4E7580741A239BA200F3E1E9 /* Main.storyboard */,
 				4E64D0C51A158E53003F02AF /* Images.xcassets */,
 				4E64D0C71A158E53003F02AF /* LaunchScreen.xib */,
 				4E64D0BC1A158E53003F02AF /* Supporting Files */,
@@ -230,9 +230,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E9E2F1F1A1A8FAE0035F9A7 /* Main.storyboard in Resources */,
 				4E64D0C91A158E53003F02AF /* LaunchScreen.xib in Resources */,
 				4E64D0C61A158E53003F02AF /* Images.xcassets in Resources */,
+				4E7580761A239BA300F3E1E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +290,14 @@
 				4E64D0C81A158E53003F02AF /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		4E7580741A239BA200F3E1E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E7580751A239BA300F3E1E9 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

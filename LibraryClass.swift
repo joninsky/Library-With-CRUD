@@ -16,6 +16,7 @@ class Library {
     //An instantiated empty array of Shelf Objects. I instantiate it so that I don't have to check for instantiation when I use it
     lazy var arrayOfShelves: [Shelf] = [Shelf]()
     
+    //When a book is checked out it does not belong to a shelf. It is then kept in the arrayOfCheckedOutBooks.
     lazy var arrayOfCheckedOutBooks: [Book] = [Book]()
 
     //function to add a shelf to the library. When a Library is created it does not come with shelves
@@ -33,6 +34,8 @@ class Library {
         }
     }
     
+    
+    //function that returns the number of shelves
     func numberOfShelves() -> Int {
         return arrayOfShelves.count
     }
@@ -55,7 +58,7 @@ class Library {
         arrayOfCheckedOutBooks.append(s.checkOutBook(b))
     }
     
-    //get Book
+    //The Get book function is used to return a book that can then be assigned to an instance of book in the controller. This is sot hat the code in the controller can then manipulate the book directly to update it. 
     func getBook(title: String, author: String) -> Book?{
 
             var i: Int = 0
@@ -142,6 +145,12 @@ class Library {
                 //append it to the array to return
                 allBooks.append(b)
             }
+        }
+        
+        //get all the books that are currently checked out but still belong to this library
+        for b in arrayOfCheckedOutBooks{
+            //append it to the array to return
+            allBooks.append(b)
         }
         //return the array of all the books
         return allBooks

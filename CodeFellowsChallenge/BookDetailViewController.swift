@@ -16,8 +16,8 @@ class BookDetailViewController: UIViewController, UIPickerViewDataSource, UIPick
     @IBOutlet weak var lblAuthor: UILabel!
     @IBOutlet weak var lblIsChecked: UILabel!
     @IBOutlet weak var btnCheckInOut: UIButton!
-    @IBOutlet weak var lblSelectShelfReminder: UILabel!
     @IBOutlet weak var shelfPicker: UIPickerView! = UIPickerView()
+    
     
     var library: Library?
     var passedTitle: String?
@@ -33,8 +33,6 @@ class BookDetailViewController: UIViewController, UIPickerViewDataSource, UIPick
         lblAuthor.text = theBook!.bookAuthor
         updateCheckedOutStatus()
         shelfPicker.delegate = self
-        //shelfPicker.hidden = true
-        //lblSelectShelfReminder.hidden = true
     }
     
     
@@ -52,9 +50,6 @@ class BookDetailViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     @IBAction func btnCheckInOut(sender: AnyObject) {
         if theBook?.isCheckedOut == true {
-            //shelfPicker.hidden = false
-           //lblSelectShelfReminder.hidden = false
-           
             library?.checkIn(theBook!, s: library!.arrayOfShelves[selectedShelf])
             updateCheckedOutStatus()
         }else{

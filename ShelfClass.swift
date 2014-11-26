@@ -14,6 +14,7 @@ class Shelf {
     lazy var booksOnShelf: [Book] = [Book]()
     var shelfNumber: Int?
     
+    //function that is called when a book is checked out. It returns the book to check out and calls the unshelf method of the book
     func checkOutBook(bookToCheckOut: Book) -> Book {
         for var i = 0; i < booksOnShelf.count; ++i {
             if bookToCheckOut.bookTitle == booksOnShelf[i].bookTitle && bookToCheckOut.bookAuthor == booksOnShelf[i].bookAuthor {
@@ -23,6 +24,7 @@ class Shelf {
         return bookToCheckOut.unshelf()
     }
     
+    //function to check in book to this shelf.
     func checkInBook(bookToCheckIn: Book, shelfToPlaceBookOn: Shelf) {
         bookToCheckIn.enshelf(shelfToPlaceBookOn)
         booksOnShelf.append(bookToCheckIn)

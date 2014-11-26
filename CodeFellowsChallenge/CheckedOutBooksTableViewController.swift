@@ -46,10 +46,14 @@ class CheckedOutBooksTableViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showCheckedOutBookDetail" {
         var DVC = segue.destinationViewController as BookDetailViewController
         DVC.library = self.library
         DVC.passedTitle = titleToPass
         DVC.passedAuthor = authorToPass
+        }else{
+            println("Unable showCheckedOutBookDetail Segue")
+        }
     }
     
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

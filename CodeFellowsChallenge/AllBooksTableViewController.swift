@@ -28,7 +28,7 @@ class AllBooksTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         var allBooks: [Book] = library!.getAllBooks()
-        allBooks += library!.arrayOfCheckedOutBooks
+        //allBooks += library!.arrayOfCheckedOutBooks
         return allBooks.count
     }
     
